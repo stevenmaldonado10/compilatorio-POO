@@ -1,6 +1,6 @@
 package org.example;
 
-public class Estudiante {
+public class Estudiante implements AccionesEstudiante {
 
     private String nombre;
 	private int edad;
@@ -43,5 +43,16 @@ public class Estudiante {
         }else{
             return false;
         }
+    }
+
+    @Override
+    public void estudiar() {
+        System.out.println(this.nombre+" está estudiando");
+    }
+
+    @Override
+    public void presentarExamen() {
+        System.out.println(this.nombre+" está presentando un examen");
+
     }
 }
