@@ -1,11 +1,11 @@
-package org.example;
+package org.example.ejercicio1;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class GestionEstudiantes {
 
-    private Map<String,Estudiante> estudiantes = new HashMap<>();
+    private final Map<String,Estudiante> estudiantes = new HashMap<>();
 
     public void agregarEstudiante(String nombre, int edad, double calificacion){
 
